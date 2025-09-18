@@ -1,10 +1,10 @@
-# PayScale URL Parser
+# Payscale URL Parser
 
-A Python tool for parsing and analyzing PayScale URLs to extract traffic patterns, geographic data, and content categorization from large datasets.
+A Python tool for parsing and analyzing Payscale URLs to extract traffic patterns, geographic data, and content categorization from large datasets.
 
 ## Features
 
-- **Intelligent URL Parsing**: Automatically categorizes PayScale URLs by section (cost-of-living, research, etc.)
+- **Intelligent URL Parsing**: Automatically categorizes Payscale URLs by section (cost-of-living, research, etc.)
 - **Geographic Extraction**: Extracts state/city data from cost-of-living URLs
 - **Job/Employer Analysis**: Parses job titles, company names, and salary types from research URLs
 - **Traffic Analysis**: Provides comprehensive traffic breakdowns by category, location, and content type
@@ -92,10 +92,10 @@ After setup, verify everything works:
 
 ```bash
 # Run the test suite
-python test_parser.py
+python3 test_parser.py
 
 # Process the sample data
-python run_parser.py sample_data.csv
+python3 run_parser.py sample_data.csv
 
 # Check the results
 ls output/
@@ -113,16 +113,16 @@ You should see output files like:
 
 ```bash
 # Basic usage - parse CSV file
-python run_parser.py input_file.csv
+python3 run_parser.py input_file.csv
 
 # Specify output directory
-python run_parser.py input_file.csv --output-dir results/
+python3 run_parser.py input_file.csv --output-dir results/
 
 # Process large file with custom batch size
-python run_parser.py large_file.csv --batch-size 50000
+python3 run_parser.py large_file.csv --batch-size 50000
 
 # Specify URL column name (if different from 'URL')
-python run_parser.py data.csv --url-column "Page_URL"
+python3 run_parser.py data.csv --url-column "Page_URL"
 ```
 
 ### Method 2: Python Script
@@ -326,16 +326,16 @@ For issues or questions:
 This tool is provided as-is for URL parsing and analysis purposes.
 
 # 1. Download all files to a folder, then:
-python setup.py
+python3 setup.py
 
 # 2. Test with sample data:
-python run_parser.py sample_data.csv
+python3 run_parser.py sample_data.csv
 
 # 3. Use with your own data:
-python run_parser.py your_data.csv
+python3 run_parser.py your_data.csv
 
 # Large file processing with batches
-python run_parser.py large_file.csv --batch-size 100000
+python3 run_parser.py large_file.csv --batch-size 100000
 
 # Custom output location
 python run_parser.py data.csv --output-dir results/
